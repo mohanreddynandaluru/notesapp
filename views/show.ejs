@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>notes keep</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      .filebody {
+        padding: 20px;
+      }
+      .heading {
+        /* border: 2px rgb(161, 161, 170) solid; */
+        text-align: center;
+        padding: 20px;
+      }
+      .line {
+        border: 1px rgba(255, 255, 255, 0.708) dotted;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main w-full min-h-screen bg-zinc-900 p-10">
+      <a href="/" class="text-blue-400 mt-3">go back to home</a>
+      <h1 class="heading text-3xl tracking-tighter text-white mt-3">
+        <%= filename %>
+      </h1>
+      <hr class="line" />
+      <p class="filebody text-xl mt-2 text-white mt-4"><%= filedata %></p>
+    </div>
+  </body>
+</html>
